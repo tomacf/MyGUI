@@ -27,6 +27,52 @@ Un simple fichier de configuration permet à MyGui de mettre en place des interf
 Son système d'ECS en fait un outil adapté à toutes les situations.</p>
 
 <h3>
+<a id="tutorial" class="anchor" href="#tutorial" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tutorial</h3>
+
+<h4>
+<a id="step-1" class="anchor" href="#step-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Step 1</h4>
+
+<p>Instanciez le render système et la Factory.</p>
+
+<pre><code>SRender   render;
+Factory   builder(&amp;render);
+</code></pre>
+
+<h4>
+<a id="step-2" class="anchor" href="#step-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Step 2</h4>
+
+<p>Créez vos objets !</p>
+
+<pre><code>Entity *cercle = builder.buildCircle();
+cercle-&gt;getAttr&lt;GEOMETRY&gt;()-&gt;set("x", 100)-&gt;set("y", 100)-&gt;set("w", 10);
+cercle-&gt;getAttr&lt;COLOR&gt;()-&gt;setRGBA(255, 255, 0, 100);
+cercle-&gt;getAttr&lt;EVENT&gt;()-&gt;setEvent(sf::Event::MouseButtonPressed, &amp;mouse_up_fct);
+</code></pre>
+
+<h4>
+<a id="step-3" class="anchor" href="#step-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Step 3</h4>
+
+<p>La boucle d'event !</p>
+
+<p>while(!terminer)
+  {
+    sf::Event e;
+    while (render.update(e))
+      {
+        if (e.type == sf::Event::Closed)
+          terminer = true;
+        cercle-&gt;getAttr()-&gt;checkEvent(e);
+      }
+    render.clear();</p>
+
+<pre><code>cercle-&gt;getAttr&lt;DRAW&gt;()-&gt;draw();
+
+render.display();
+</code></pre>
+
+<p>}</p>
+
+<h3>
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
 <p>Toma Cristini (cristi_a), Mathieu Candiotti (candio_m)</p>
