@@ -1,0 +1,90 @@
+\hypertarget{class_c_draw}{}\section{C\+Draw Class Reference}
+\label{class_c_draw}\index{C\+Draw@{C\+Draw}}
+
+
+Classe héritant de \hyperlink{class_component}{Component} et composé du nécéssaire pour afficher.  
+
+
+
+
+{\ttfamily \#include $<$C\+Draw.\+hh$>$}
+
+Inheritance diagram for C\+Draw\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=11.000000cm]{class_c_draw}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_draw_a8750d7c0403a62a0d299d6918233f77c}{}{\bfseries C\+Draw} (\hyperlink{class_s_render}{S\+Render} $\ast$, \hyperlink{class_entity}{Entity} $\ast$)\label{class_c_draw_a8750d7c0403a62a0d299d6918233f77c}
+
+\item 
+\hypertarget{class_c_draw_a1f9a4496073715710ae32ed198dae9ab}{}virtual void \hyperlink{class_c_draw_a1f9a4496073715710ae32ed198dae9ab}{draw} ()=0\label{class_c_draw_a1f9a4496073715710ae32ed198dae9ab}
+
+\begin{DoxyCompactList}\small\item\em Fonction draw qui affiche imposée aux enfants. \end{DoxyCompactList}\item 
+\hypertarget{class_c_draw_a12c33a831c5a484f4173fbc385e63d72}{}virtual bool \hyperlink{class_c_draw_a12c33a831c5a484f4173fbc385e63d72}{contains} (int, int)=0\label{class_c_draw_a12c33a831c5a484f4173fbc385e63d72}
+
+\begin{DoxyCompactList}\small\item\em Fonction contains qui vérifie si l\textquotesingle{}entité est cliquée. \end{DoxyCompactList}\item 
+\hyperlink{class_c_draw}{C\+Draw} $\ast$ \hyperlink{class_c_draw_adc108c63255cf24a18bac9efbd709e8d}{set\+Render} (\hyperlink{class_s_render}{S\+Render} $\ast$)
+\begin{DoxyCompactList}\small\item\em En cas de changement de \hyperlink{class_s_render}{S\+Render}. \end{DoxyCompactList}\item 
+\hyperlink{class_s_render}{S\+Render} $\ast$ \hyperlink{class_c_draw_a8785e6f252fc6ba0dcf0e1f6faafa06d}{get\+Render} ()
+\begin{DoxyCompactList}\small\item\em Getter du render system. \end{DoxyCompactList}\item 
+\hypertarget{class_c_draw_a7db62f4578316163367d26a663630ad8}{}void \hyperlink{class_c_draw_a7db62f4578316163367d26a663630ad8}{propagate\+Children} ()\label{class_c_draw_a7db62f4578316163367d26a663630ad8}
+
+\begin{DoxyCompactList}\small\item\em Appel les draws des enfant. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_draw_a8a5c5c81cf0975da782ef9684723e964}{}\hyperlink{class_s_render}{S\+Render} $\ast$ {\bfseries o}\label{class_c_draw_a8a5c5c81cf0975da782ef9684723e964}
+
+\item 
+\hypertarget{class_c_draw_ab26b641251ce5a8e79e40216348ebc8f}{}\hyperlink{class_entity}{Entity} $\ast$ {\bfseries e}\label{class_c_draw_ab26b641251ce5a8e79e40216348ebc8f}
+
+\item 
+\hypertarget{class_c_draw_a29fecb5dbef2702242201c137ed0ee02}{}children\+\_\+map {\bfseries children}\label{class_c_draw_a29fecb5dbef2702242201c137ed0ee02}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe héritant de \hyperlink{class_component}{Component} et composé du nécéssaire pour afficher. 
+
+\hyperlink{class_c_draw}{C\+Draw} stocke un pointeur sur le \hyperlink{class_s_render}{S\+Render} et un pointeur sur l\textquotesingle{}entité actuelle. Le children\+\_\+map contient les enfants de l\textquotesingle{}entité, il est mis à jour en cas de changement. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_draw_a8785e6f252fc6ba0dcf0e1f6faafa06d}{}\index{C\+Draw@{C\+Draw}!get\+Render@{get\+Render}}
+\index{get\+Render@{get\+Render}!C\+Draw@{C\+Draw}}
+\subsubsection[{get\+Render}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+Render} $\ast$ C\+Draw\+::get\+Render (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_draw_a8785e6f252fc6ba0dcf0e1f6faafa06d}
+
+
+Getter du render system. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_s_render}{S\+Render} $\ast$o 
+\end{DoxyReturn}
+\hypertarget{class_c_draw_adc108c63255cf24a18bac9efbd709e8d}{}\index{C\+Draw@{C\+Draw}!set\+Render@{set\+Render}}
+\index{set\+Render@{set\+Render}!C\+Draw@{C\+Draw}}
+\subsubsection[{set\+Render}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Draw} $\ast$ C\+Draw\+::set\+Render (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+Render} $\ast$}]{\+\_\+o}
+\end{DoxyParamCaption}
+)}\label{class_c_draw_adc108c63255cf24a18bac9efbd709e8d}
+
+
+En cas de changement de \hyperlink{class_s_render}{S\+Render}. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_c_draw}{C\+Draw} $\ast$this 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+component/\hyperlink{_c_draw_8hh}{C\+Draw.\+hh}\item 
+component/C\+Draw.\+cpp\end{DoxyCompactItemize}

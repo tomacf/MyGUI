@@ -1,0 +1,211 @@
+\hypertarget{class_factory}{}\section{Factory Class Reference}
+\label{class_factory}\index{Factory@{Factory}}
+
+
+Classe qui assemble les components pour préparer les objets demandé.  
+
+
+
+
+{\ttfamily \#include $<$Factory.\+hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_factory_a7fb7e8f14920fa4658fdd081dc9b6a13}{}{\bfseries Factory} (\hyperlink{class_s_render}{S\+Render} $\ast$)\label{class_factory_a7fb7e8f14920fa4658fdd081dc9b6a13}
+
+\item 
+\hyperlink{class_entity}{Entity} $\ast$ \hyperlink{class_factory_a02b9acfeff809af13a4468b45439a6b0}{build\+Button} ()
+\begin{DoxyCompactList}\small\item\em Construit un bouton. \end{DoxyCompactList}\item 
+\hyperlink{class_entity}{Entity} $\ast$ \hyperlink{class_factory_ac36af1255623013da858e419dfd6dcee}{build\+Circle} ()
+\begin{DoxyCompactList}\small\item\em Construit un Cercle. \end{DoxyCompactList}\item 
+\hyperlink{class_entity}{Entity} $\ast$ \hyperlink{class_factory_a9b810e510d0a17c3b97261267464babf}{build\+Label} ()
+\begin{DoxyCompactList}\small\item\em Construit un label. \end{DoxyCompactList}\item 
+\hyperlink{class_entity}{Entity} $\ast$ \hyperlink{class_factory_a322d133508a7d1bf2f36e22a469d99dd}{build\+Line} ()
+\begin{DoxyCompactList}\small\item\em Construit une ligne. \end{DoxyCompactList}\item 
+\hyperlink{class_entity}{Entity} $\ast$ \hyperlink{class_factory_a7c4d86337c68ef9a9c541414a76f5a01}{build\+Page} ()
+\begin{DoxyCompactList}\small\item\em Construit un container. \end{DoxyCompactList}\item 
+\hyperlink{class_entity}{Entity} $\ast$ \hyperlink{class_factory_ae706dae61b1fb221fb930f1a36d2cc76}{build\+Point} ()
+\begin{DoxyCompactList}\small\item\em Construit un point. \end{DoxyCompactList}\item 
+\hyperlink{class_entity}{Entity} $\ast$ \hyperlink{class_factory_a5355c2462e4bd2e8a986567528108683}{build\+Rectangle} ()
+\begin{DoxyCompactList}\small\item\em Construit un rectangle. \end{DoxyCompactList}\item 
+\hyperlink{class_entity}{Entity} $\ast$ \hyperlink{class_factory_a57b7f84cb5dab294ef0247633dcce024}{build\+Triangle} ()
+\begin{DoxyCompactList}\small\item\em Construit un triangle. \end{DoxyCompactList}\item 
+\hyperlink{class_entity}{Entity} $\ast$ \hyperlink{class_factory_a771e8d01899e7adc899efb2f04f110b1}{build\+Text\+Box} ()
+\begin{DoxyCompactList}\small\item\em Construit un champ texte. \end{DoxyCompactList}\item 
+\hyperlink{class_entity}{Entity} $\ast$ \hyperlink{class_factory_a6253be391d21b088f1ea4db44591e1c2}{build\+Image} ()
+\begin{DoxyCompactList}\small\item\em Construit une image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe qui assemble les components pour préparer les objets demandé. 
+
+La \hyperlink{class_factory}{Factory} build les différents types d\textquotesingle{}objets avec les component dont ils ont besoin. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_factory_a02b9acfeff809af13a4468b45439a6b0}{}\index{Factory@{Factory}!build\+Button@{build\+Button}}
+\index{build\+Button@{build\+Button}!Factory@{Factory}}
+\subsubsection[{build\+Button}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entity} $\ast$ Factory\+::build\+Button (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_factory_a02b9acfeff809af13a4468b45439a6b0}
+
+
+Construit un bouton. 
+
+Le label du bouton est centré il est peut être setté par l\textquotesingle{}intermediaire du component \hyperlink{class_c_label}{C\+Label}. Les positions et dimensions du bouton sont spécifié avec les variables x, y, w, h du component \hyperlink{class_c_geometry}{C\+Geometry}. Les couleurs sont setté dans le component \hyperlink{class_c_color}{C\+Color}. Les evenements sont setté avec le component \hyperlink{class_c_event}{C\+Event}. Les childrens sont ajouté dans le component \hyperlink{class_c_children}{C\+Children}.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_entity}{Entity} $\ast$; 
+\end{DoxyReturn}
+\hypertarget{class_factory_ac36af1255623013da858e419dfd6dcee}{}\index{Factory@{Factory}!build\+Circle@{build\+Circle}}
+\index{build\+Circle@{build\+Circle}!Factory@{Factory}}
+\subsubsection[{build\+Circle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entity} $\ast$ Factory\+::build\+Circle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_factory_ac36af1255623013da858e419dfd6dcee}
+
+
+Construit un Cercle. 
+
+Les positions et dimensions du cercle sont spécifié avec les variables x, y, w du component \hyperlink{class_c_geometry}{C\+Geometry} (avec \textquotesingle{}w\textquotesingle{} le rayon du cercle). Les couleurs sont setté dans le component \hyperlink{class_c_color}{C\+Color}. Les evenements sont setté avec le component \hyperlink{class_c_event}{C\+Event}. Les childrens sont ajouté dans le component \hyperlink{class_c_children}{C\+Children}.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_entity}{Entity} $\ast$; 
+\end{DoxyReturn}
+\hypertarget{class_factory_a6253be391d21b088f1ea4db44591e1c2}{}\index{Factory@{Factory}!build\+Image@{build\+Image}}
+\index{build\+Image@{build\+Image}!Factory@{Factory}}
+\subsubsection[{build\+Image}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entity} $\ast$ Factory\+::build\+Image (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_factory_a6253be391d21b088f1ea4db44591e1c2}
+
+
+Construit une image. 
+
+Le nom de l\textquotesingle{}image à charger est setté par le component \hyperlink{class_c_label}{C\+Label}. Les positions de l\textquotesingle{}image sont données par les variables x, y du component \hyperlink{class_c_geometry}{C\+Geometry}. Les couleurs sont setté dans le component \hyperlink{class_c_color}{C\+Color}. Les evenements sont setté avec le component \hyperlink{class_c_event}{C\+Event}. Les childrens sont ajouté dans le component \hyperlink{class_c_children}{C\+Children}.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_entity}{Entity} $\ast$; 
+\end{DoxyReturn}
+\hypertarget{class_factory_a9b810e510d0a17c3b97261267464babf}{}\index{Factory@{Factory}!build\+Label@{build\+Label}}
+\index{build\+Label@{build\+Label}!Factory@{Factory}}
+\subsubsection[{build\+Label}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entity} $\ast$ Factory\+::build\+Label (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_factory_a9b810e510d0a17c3b97261267464babf}
+
+
+Construit un label. 
+
+Le label du bouton est aligné à gauche et setté dans \hyperlink{class_c_label}{C\+Label}. Les positions du label sont spécifié avec les variables x, y du component \hyperlink{class_c_geometry}{C\+Geometry}. Les couleurs sont setté dans le component \hyperlink{class_c_color}{C\+Color}. Les evenements sont setté avec le component \hyperlink{class_c_event}{C\+Event}. Les childrens sont ajouté dans le component \hyperlink{class_c_children}{C\+Children}.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_entity}{Entity} $\ast$; 
+\end{DoxyReturn}
+\hypertarget{class_factory_a322d133508a7d1bf2f36e22a469d99dd}{}\index{Factory@{Factory}!build\+Line@{build\+Line}}
+\index{build\+Line@{build\+Line}!Factory@{Factory}}
+\subsubsection[{build\+Line}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entity} $\ast$ Factory\+::build\+Line (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_factory_a322d133508a7d1bf2f36e22a469d99dd}
+
+
+Construit une ligne. 
+
+Les positions des deux points sont spécifié avec les variables x1, y1 et x2, y2 du component \hyperlink{class_c_geometry}{C\+Geometry}. Les evenements sont setté avec le component \hyperlink{class_c_event}{C\+Event}. Les childrens sont ajouté dans le component \hyperlink{class_c_children}{C\+Children}.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_entity}{Entity} $\ast$; 
+\end{DoxyReturn}
+\hypertarget{class_factory_a7c4d86337c68ef9a9c541414a76f5a01}{}\index{Factory@{Factory}!build\+Page@{build\+Page}}
+\index{build\+Page@{build\+Page}!Factory@{Factory}}
+\subsubsection[{build\+Page}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entity} $\ast$ Factory\+::build\+Page (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_factory_a7c4d86337c68ef9a9c541414a76f5a01}
+
+
+Construit un container. 
+
+La zone de réaction du container est spécifié dans les variables x, y, w, h du component \hyperlink{class_c_geometry}{C\+Geometry}. Les evenements sont setté avec le component \hyperlink{class_c_event}{C\+Event}. Les childrens sont ajouté dans le component \hyperlink{class_c_children}{C\+Children}.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_entity}{Entity} $\ast$; 
+\end{DoxyReturn}
+\hypertarget{class_factory_ae706dae61b1fb221fb930f1a36d2cc76}{}\index{Factory@{Factory}!build\+Point@{build\+Point}}
+\index{build\+Point@{build\+Point}!Factory@{Factory}}
+\subsubsection[{build\+Point}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entity} $\ast$ Factory\+::build\+Point (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_factory_ae706dae61b1fb221fb930f1a36d2cc76}
+
+
+Construit un point. 
+
+Les positions du point sont spécifié avec les variables x, y du component \hyperlink{class_c_geometry}{C\+Geometry}. Les couleurs sont setté dans le component \hyperlink{class_c_color}{C\+Color}. Les evenements sont setté avec le component \hyperlink{class_c_event}{C\+Event}. Les childrens sont ajouté dans le component \hyperlink{class_c_children}{C\+Children}.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_entity}{Entity} $\ast$; 
+\end{DoxyReturn}
+\hypertarget{class_factory_a5355c2462e4bd2e8a986567528108683}{}\index{Factory@{Factory}!build\+Rectangle@{build\+Rectangle}}
+\index{build\+Rectangle@{build\+Rectangle}!Factory@{Factory}}
+\subsubsection[{build\+Rectangle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entity} $\ast$ Factory\+::build\+Rectangle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_factory_a5355c2462e4bd2e8a986567528108683}
+
+
+Construit un rectangle. 
+
+Les positions et dimensions du rectangle sont spécifié avec les variables x, y, w, h du component \hyperlink{class_c_geometry}{C\+Geometry}. Les couleurs sont setté dans le component \hyperlink{class_c_color}{C\+Color}. Les evenements sont setté avec le component \hyperlink{class_c_event}{C\+Event}. Les childrens sont ajouté dans le component \hyperlink{class_c_children}{C\+Children}.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_entity}{Entity} $\ast$; 
+\end{DoxyReturn}
+\hypertarget{class_factory_a771e8d01899e7adc899efb2f04f110b1}{}\index{Factory@{Factory}!build\+Text\+Box@{build\+Text\+Box}}
+\index{build\+Text\+Box@{build\+Text\+Box}!Factory@{Factory}}
+\subsubsection[{build\+Text\+Box}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entity} $\ast$ Factory\+::build\+Text\+Box (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_factory_a771e8d01899e7adc899efb2f04f110b1}
+
+
+Construit un champ texte. 
+
+Le texte et le fontsize sont setté par l\textquotesingle{}intermediaire du component \hyperlink{class_c_label}{C\+Label}. Les positions et dimensions du champ texte sont spécifié avec les variables x, y, w, h du component \hyperlink{class_c_geometry}{C\+Geometry}. Les couleurs sont setté dans le component \hyperlink{class_c_color}{C\+Color}. Les evenements sont setté avec le component \hyperlink{class_c_event}{C\+Event}. Les childrens sont ajouté dans le component \hyperlink{class_c_children}{C\+Children}.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_entity}{Entity} $\ast$; 
+\end{DoxyReturn}
+\hypertarget{class_factory_a57b7f84cb5dab294ef0247633dcce024}{}\index{Factory@{Factory}!build\+Triangle@{build\+Triangle}}
+\index{build\+Triangle@{build\+Triangle}!Factory@{Factory}}
+\subsubsection[{build\+Triangle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entity} $\ast$ Factory\+::build\+Triangle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_factory_a57b7f84cb5dab294ef0247633dcce024}
+
+
+Construit un triangle. 
+
+Les positions et dimensions du triangle sont spécifié avec les variables x, y, w (pour la hauteur du triangle) du component \hyperlink{class_c_geometry}{C\+Geometry}. Les couleurs sont setté dans le component \hyperlink{class_c_color}{C\+Color}. Les evenements sont setté avec le component \hyperlink{class_c_event}{C\+Event}. Les childrens sont ajouté dans le component \hyperlink{class_c_children}{C\+Children}.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_entity}{Entity} $\ast$; 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+factory/\hyperlink{_factory_8hh}{Factory.\+hh}\item 
+factory/Factory.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,92 @@
+\hypertarget{class_c_event}{}\section{C\+Event Class Reference}
+\label{class_c_event}\index{C\+Event@{C\+Event}}
+
+
+Classe héritant de \hyperlink{class_component}{Component} qui gère les Event.  
+
+
+
+
+{\ttfamily \#include $<$C\+Event.\+hh$>$}
+
+Inheritance diagram for C\+Event\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_event}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_event_a85be8a946bcaf5b2bae52126d9804d16}{}{\bfseries C\+Event} (\hyperlink{class_s_render}{S\+Render} $\ast$, \hyperlink{class_entity}{Entity} $\ast$)\label{class_c_event_a85be8a946bcaf5b2bae52126d9804d16}
+
+\item 
+\hyperlink{class_c_event}{C\+Event} $\ast$ \hyperlink{class_c_event_ad43296e11915e550761216b4866f2b75}{set\+Event} (sf\+::\+Event\+::\+Event\+Type, void($\ast$)(\hyperlink{class_entity}{Entity} $\ast$, sf\+::\+Event \&))
+\begin{DoxyCompactList}\small\item\em Spécifie une réaction par rapport à un évenement. \end{DoxyCompactList}\item 
+\hyperlink{class_c_event}{C\+Event} $\ast$ \hyperlink{class_c_event_a51534e6480051b3b2c38f618c27495cb}{receive\+Event} (sf\+::\+Event \&)
+\begin{DoxyCompactList}\small\item\em Reçois un évenement et appelle la fonction correspondante. $\ast$. \end{DoxyCompactList}\item 
+\hyperlink{class_c_event}{C\+Event} $\ast$ \hyperlink{class_c_event_a027b94f30ebdf2f699613aa56570ea86}{check\+Event} (sf\+::\+Event \&)
+\begin{DoxyCompactList}\small\item\em Reçois un évenement et vérifie si il devient le focus, si il doit réagir. \end{DoxyCompactList}\item 
+\hypertarget{class_c_event_ae9c23f7c6cc4db8502790ff10c6a0c32}{}void \hyperlink{class_c_event_ae9c23f7c6cc4db8502790ff10c6a0c32}{propagate\+Children} (sf\+::\+Event \&)\label{class_c_event_ae9c23f7c6cc4db8502790ff10c6a0c32}
+
+\begin{DoxyCompactList}\small\item\em Propage l\textquotesingle{}évenement aux enfants. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Classe héritant de \hyperlink{class_component}{Component} qui gère les Event. 
+
+La classe possède un pointeur sur le \hyperlink{class_s_render}{S\+Render} et sur l\textquotesingle{}entity ainsi qu\textquotesingle{}un tableau de pointeur sur fonction indexé par Event\+Type.
+
+Les fonctions doivent respecter ce prototype void fct(\+Entity $\ast$, sf\+::\+Event \&) Elles recevront en premier paramètre l\textquotesingle{}entitée et en deuxième paramètre l\textquotesingle{}event S\+F\+M\+L 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_event_a027b94f30ebdf2f699613aa56570ea86}{}\index{C\+Event@{C\+Event}!check\+Event@{check\+Event}}
+\index{check\+Event@{check\+Event}!C\+Event@{C\+Event}}
+\subsubsection[{check\+Event}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Event} $\ast$ C\+Event\+::check\+Event (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Event \&}]{event}
+\end{DoxyParamCaption}
+)}\label{class_c_event_a027b94f30ebdf2f699613aa56570ea86}
+
+
+Reçois un évenement et vérifie si il devient le focus, si il doit réagir. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_c_event}{C\+Event} $\ast$ 
+\end{DoxyReturn}
+\hypertarget{class_c_event_a51534e6480051b3b2c38f618c27495cb}{}\index{C\+Event@{C\+Event}!receive\+Event@{receive\+Event}}
+\index{receive\+Event@{receive\+Event}!C\+Event@{C\+Event}}
+\subsubsection[{receive\+Event}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Event} $\ast$ C\+Event\+::receive\+Event (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Event \&}]{event}
+\end{DoxyParamCaption}
+)}\label{class_c_event_a51534e6480051b3b2c38f618c27495cb}
+
+
+Reçois un évenement et appelle la fonction correspondante. $\ast$. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_c_event}{C\+Event} $\ast$ 
+\end{DoxyReturn}
+\hypertarget{class_c_event_ad43296e11915e550761216b4866f2b75}{}\index{C\+Event@{C\+Event}!set\+Event@{set\+Event}}
+\index{set\+Event@{set\+Event}!C\+Event@{C\+Event}}
+\subsubsection[{set\+Event}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Event} $\ast$ C\+Event\+::set\+Event (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Event\+::\+Event\+Type}]{ev, }
+\item[{void($\ast$)({\bf Entity} $\ast$, sf\+::\+Event \&)}]{fct}
+\end{DoxyParamCaption}
+)}\label{class_c_event_ad43296e11915e550761216b4866f2b75}
+
+
+Spécifie une réaction par rapport à un évenement. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_c_event}{C\+Event} $\ast$ 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+component/\hyperlink{_c_event_8hh}{C\+Event.\+hh}\item 
+component/C\+Event.\+cpp\end{DoxyCompactItemize}

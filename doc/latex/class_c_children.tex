@@ -1,0 +1,97 @@
+\hypertarget{class_c_children}{}\section{C\+Children Class Reference}
+\label{class_c_children}\index{C\+Children@{C\+Children}}
+
+
+Classe héritant de \hyperlink{class_component}{Component} et fait d\textquotesingle{}une map d\textquotesingle{}entitée.  
+
+
+
+
+{\ttfamily \#include $<$C\+Children.\+hh$>$}
+
+Inheritance diagram for C\+Children\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_children}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const children\+\_\+map \& \hyperlink{class_c_children_aa02a9a499b3cb60e36d43b049db5dd3a}{get\+All} ()
+\begin{DoxyCompactList}\small\item\em Récupérer l\textquotesingle{}ensemble des enfants. \end{DoxyCompactList}\item 
+\hyperlink{class_c_children}{C\+Children} $\ast$ \hyperlink{class_c_children_a993c1f483adcba2fee4fbd0e7f13fb33}{push} (\hyperlink{class_entity}{Entity} $\ast$)
+\begin{DoxyCompactList}\small\item\em Ajout d\textquotesingle{}une entitée. \end{DoxyCompactList}\item 
+\hyperlink{class_c_children}{C\+Children} $\ast$ \hyperlink{class_c_children_a000d123c781df5d6e2000e2799456963}{remove} (int)
+\begin{DoxyCompactList}\small\item\em Supression d\textquotesingle{}une entitée. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Classe héritant de \hyperlink{class_component}{Component} et fait d\textquotesingle{}une map d\textquotesingle{}entitée. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_children_aa02a9a499b3cb60e36d43b049db5dd3a}{}\index{C\+Children@{C\+Children}!get\+All@{get\+All}}
+\index{get\+All@{get\+All}!C\+Children@{C\+Children}}
+\subsubsection[{get\+All}]{\setlength{\rightskip}{0pt plus 5cm}const children\+\_\+map \& C\+Children\+::get\+All (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_children_aa02a9a499b3cb60e36d43b049db5dd3a}
+
+
+Récupérer l\textquotesingle{}ensemble des enfants. 
+
+Methode qui permet de récupérer les enfants de l\textquotesingle{}entitée mère
+
+\begin{DoxyReturn}{Returns}
+children\+\_\+map 
+\end{DoxyReturn}
+\hypertarget{class_c_children_a993c1f483adcba2fee4fbd0e7f13fb33}{}\index{C\+Children@{C\+Children}!push@{push}}
+\index{push@{push}!C\+Children@{C\+Children}}
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Children} $\ast$ C\+Children\+::push (
+\begin{DoxyParamCaption}
+\item[{{\bf Entity} $\ast$}]{b}
+\end{DoxyParamCaption}
+)}\label{class_c_children_a993c1f483adcba2fee4fbd0e7f13fb33}
+
+
+Ajout d\textquotesingle{}une entitée. 
+
+Methode qui permet d\textquotesingle{}ajouter une entitée en tant qu\textquotesingle{}enfant
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_entity}{Entity}} & $\ast$ \+: l\textquotesingle{}entitée \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_c_children}{C\+Children} $\ast$\+: pour permettre des appels en batterie 
+\end{DoxyReturn}
+\hypertarget{class_c_children_a000d123c781df5d6e2000e2799456963}{}\index{C\+Children@{C\+Children}!remove@{remove}}
+\index{remove@{remove}!C\+Children@{C\+Children}}
+\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Children} $\ast$ C\+Children\+::remove (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}\label{class_c_children_a000d123c781df5d6e2000e2799456963}
+
+
+Supression d\textquotesingle{}une entitée. 
+
+Methode qui permet de supprimer une entitée des enfants
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & id\+: L\textquotesingle{}id de l\textquotesingle{}entitée a supprimer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this pour permettre des appels en batterie 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+component/\hyperlink{_c_children_8hh}{C\+Children.\+hh}\item 
+component/C\+Children.\+cpp\end{DoxyCompactItemize}

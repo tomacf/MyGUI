@@ -1,0 +1,167 @@
+\hypertarget{class_s_render}{}\section{S\+Render Class Reference}
+\label{class_s_render}\index{S\+Render@{S\+Render}}
+
+
+Classe d\textquotesingle{}encapsulation de la lib.  
+
+
+
+
+{\ttfamily \#include $<$S\+Render.\+hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_s_render_abb69688a391dc00b1f34fa4401cfdcf3}{start} (const std\+::string \&title=\char`\"{}Engine\char`\"{}, int width=800, int height=600)
+\begin{DoxyCompactList}\small\item\em Crée la fenêtre et charge les fonts. \end{DoxyCompactList}\item 
+int \hyperlink{class_s_render_a40af2814effd6e6428180e4286ef084b}{update} (sf\+::\+Event \&)
+\begin{DoxyCompactList}\small\item\em Met à jour l\textquotesingle{}évenement. \end{DoxyCompactList}\item 
+\hypertarget{class_s_render_ad2277608f2957dd12f615cf7e66efa27}{}void \hyperlink{class_s_render_ad2277608f2957dd12f615cf7e66efa27}{clear} ()\label{class_s_render_ad2277608f2957dd12f615cf7e66efa27}
+
+\begin{DoxyCompactList}\small\item\em Vide la fenêtre. \end{DoxyCompactList}\item 
+\hypertarget{class_s_render_a012ea056e412a5fd2323aaa46dbf112d}{}void \hyperlink{class_s_render_a012ea056e412a5fd2323aaa46dbf112d}{display} ()\label{class_s_render_a012ea056e412a5fd2323aaa46dbf112d}
+
+\begin{DoxyCompactList}\small\item\em Affiche la fenêtre. \end{DoxyCompactList}\item 
+sf\+::\+Render\+Window \& \hyperlink{class_s_render_a949243a32970a5c32c39f93fe7faa748}{get\+Win} ()
+\begin{DoxyCompactList}\small\item\em Récupère la fenêtre pour faire l\textquotesingle{}affichage de l\textquotesingle{}extérieur. \end{DoxyCompactList}\item 
+sf\+::\+Font \& \hyperlink{class_s_render_a6461c9bef628ee214809e1505b2e482d}{get\+Font} ()
+\begin{DoxyCompactList}\small\item\em Récupère la police pour tout affichage texte. \end{DoxyCompactList}\item 
+int \hyperlink{class_s_render_a8bf7839630aa1555153a6e6e0739ed7f}{get\+Width} ()
+\begin{DoxyCompactList}\small\item\em Récupère la largeur de la fenêtre. \end{DoxyCompactList}\item 
+int \hyperlink{class_s_render_aed0673771015a6467d575c89da5b972d}{get\+Height} ()
+\begin{DoxyCompactList}\small\item\em Récupère la hauteur de la fenêtre. \end{DoxyCompactList}\item 
+bool \hyperlink{class_s_render_a4dc6db44efd4eb24ba2db8c31b98b0e2}{is\+Open} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que la fenêtre est ouverte. \end{DoxyCompactList}\item 
+\hypertarget{class_s_render_a777ee3dfec5504d0dd8070fbd8ed32f8}{}void \hyperlink{class_s_render_a777ee3dfec5504d0dd8070fbd8ed32f8}{close} ()\label{class_s_render_a777ee3dfec5504d0dd8070fbd8ed32f8}
+
+\begin{DoxyCompactList}\small\item\em Ferme la fenêtre. \end{DoxyCompactList}\item 
+\hyperlink{class_entity}{Entity} $\ast$ \hyperlink{class_s_render_a23e295644f80582d082c75a77a258e9c}{focus} (\hyperlink{class_entity}{Entity} $\ast$=N\+U\+L\+L)
+\begin{DoxyCompactList}\small\item\em Récupère l\textquotesingle{}entité qui a le focus ou assigne le focus a une entité \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe d\textquotesingle{}encapsulation de la lib. 
+
+Initialise la librairie, récupère les évenements, et affiche les élements. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_s_render_a23e295644f80582d082c75a77a258e9c}{}\index{S\+Render@{S\+Render}!focus@{focus}}
+\index{focus@{focus}!S\+Render@{S\+Render}}
+\subsubsection[{focus}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entity} $\ast$ S\+Render\+::focus (
+\begin{DoxyParamCaption}
+\item[{{\bf Entity} $\ast$}]{e = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}\label{class_s_render_a23e295644f80582d082c75a77a258e9c}
+
+
+Récupère l\textquotesingle{}entité qui a le focus ou assigne le focus a une entité 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_entity}{Entity} $\ast$ 
+\end{DoxyReturn}
+\hypertarget{class_s_render_a6461c9bef628ee214809e1505b2e482d}{}\index{S\+Render@{S\+Render}!get\+Font@{get\+Font}}
+\index{get\+Font@{get\+Font}!S\+Render@{S\+Render}}
+\subsubsection[{get\+Font}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Font \& S\+Render\+::get\+Font (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_s_render_a6461c9bef628ee214809e1505b2e482d}
+
+
+Récupère la police pour tout affichage texte. 
+
+\begin{DoxyReturn}{Returns}
+sf\+::\+Font \& 
+\end{DoxyReturn}
+\hypertarget{class_s_render_aed0673771015a6467d575c89da5b972d}{}\index{S\+Render@{S\+Render}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!S\+Render@{S\+Render}}
+\subsubsection[{get\+Height}]{\setlength{\rightskip}{0pt plus 5cm}int S\+Render\+::get\+Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_s_render_aed0673771015a6467d575c89da5b972d}
+
+
+Récupère la hauteur de la fenêtre. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{class_s_render_a8bf7839630aa1555153a6e6e0739ed7f}{}\index{S\+Render@{S\+Render}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!S\+Render@{S\+Render}}
+\subsubsection[{get\+Width}]{\setlength{\rightskip}{0pt plus 5cm}int S\+Render\+::get\+Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_s_render_a8bf7839630aa1555153a6e6e0739ed7f}
+
+
+Récupère la largeur de la fenêtre. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{class_s_render_a949243a32970a5c32c39f93fe7faa748}{}\index{S\+Render@{S\+Render}!get\+Win@{get\+Win}}
+\index{get\+Win@{get\+Win}!S\+Render@{S\+Render}}
+\subsubsection[{get\+Win}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Render\+Window \& S\+Render\+::get\+Win (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_s_render_a949243a32970a5c32c39f93fe7faa748}
+
+
+Récupère la fenêtre pour faire l\textquotesingle{}affichage de l\textquotesingle{}extérieur. 
+
+\begin{DoxyReturn}{Returns}
+sf\+::\+Render\+Window \& 
+\end{DoxyReturn}
+\hypertarget{class_s_render_a4dc6db44efd4eb24ba2db8c31b98b0e2}{}\index{S\+Render@{S\+Render}!is\+Open@{is\+Open}}
+\index{is\+Open@{is\+Open}!S\+Render@{S\+Render}}
+\subsubsection[{is\+Open}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+Render\+::is\+Open (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_s_render_a4dc6db44efd4eb24ba2db8c31b98b0e2}
+
+
+Vérifie que la fenêtre est ouverte. 
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\hypertarget{class_s_render_abb69688a391dc00b1f34fa4401cfdcf3}{}\index{S\+Render@{S\+Render}!start@{start}}
+\index{start@{start}!S\+Render@{S\+Render}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+Render\+::start (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{title = {\ttfamily \char`\"{}Engine\char`\"{}}, }
+\item[{int}]{width = {\ttfamily 800}, }
+\item[{int}]{height = {\ttfamily 600}}
+\end{DoxyParamCaption}
+)}\label{class_s_render_abb69688a391dc00b1f34fa4401cfdcf3}
+
+
+Crée la fenêtre et charge les fonts. 
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\hypertarget{class_s_render_a40af2814effd6e6428180e4286ef084b}{}\index{S\+Render@{S\+Render}!update@{update}}
+\index{update@{update}!S\+Render@{S\+Render}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}int S\+Render\+::update (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Event \&}]{event}
+\end{DoxyParamCaption}
+)}\label{class_s_render_a40af2814effd6e6428180e4286ef084b}
+
+
+Met à jour l\textquotesingle{}évenement. 
+
+\begin{DoxyReturn}{Returns}
+int $>$ 0 si il y a eu un event 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+system/\hyperlink{_s_render_8hh}{S\+Render.\+hh}\item 
+system/S\+Render.\+cpp\end{DoxyCompactItemize}

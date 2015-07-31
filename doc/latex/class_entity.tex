@@ -1,0 +1,75 @@
+\hypertarget{class_entity}{}\section{Entity Class Reference}
+\label{class_entity}\index{Entity@{Entity}}
+
+
+Classe possédant une map de component et gérant les accès.  
+
+
+
+
+{\ttfamily \#include $<$Entity.\+hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\T $\ast$ \hyperlink{class_entity_ab1565dea579b29e0431a9d1c106d8e34}{set\+Attr} ()
+\begin{DoxyCompactList}\small\item\em Crée un component. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{class_entity_afb39788bb9d49672d59ae6d367e7f6b2}{set\+Attr} (\hyperlink{class_component}{Component} $\ast$c)
+\begin{DoxyCompactList}\small\item\em Assigne un component. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{class_entity_a71c7f216536c0af004c0c62b0c2ceb3b}{get\+Attr} ()
+\begin{DoxyCompactList}\small\item\em Récupère un component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe possédant une map de component et gérant les accès. 
+
+La component\+\_\+map est faite de Component$\ast$ indexé par l\textquotesingle{}Id de leur classe 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_entity_a71c7f216536c0af004c0c62b0c2ceb3b}{}\index{Entity@{Entity}!get\+Attr@{get\+Attr}}
+\index{get\+Attr@{get\+Attr}!Entity@{Entity}}
+\subsubsection[{get\+Attr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T Entity\+::get\+Attr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_entity_a71c7f216536c0af004c0c62b0c2ceb3b}
+
+
+Récupère un component. 
+
+Renvoie le component de la classe passé en template en se servant de son id de classe. Effectue un cast pour passer de \hyperlink{class_component}{Component} $\ast$ à T. \begin{DoxyReturn}{Returns}
+T component 
+\end{DoxyReturn}
+\hypertarget{class_entity_ab1565dea579b29e0431a9d1c106d8e34}{}\index{Entity@{Entity}!set\+Attr@{set\+Attr}}
+\index{set\+Attr@{set\+Attr}!Entity@{Entity}}
+\subsubsection[{set\+Attr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T$\ast$ Entity\+::set\+Attr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_entity_ab1565dea579b29e0431a9d1c106d8e34}
+
+
+Crée un component. 
+
+Ajoute le component passé en template à la map avec comme clé L\textquotesingle{}id de la classe du component Effectue un cast du component créé et le return \begin{DoxyReturn}{Returns}
+T $\ast$component 
+\end{DoxyReturn}
+\hypertarget{class_entity_afb39788bb9d49672d59ae6d367e7f6b2}{}\index{Entity@{Entity}!set\+Attr@{set\+Attr}}
+\index{set\+Attr@{set\+Attr}!Entity@{Entity}}
+\subsubsection[{set\+Attr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T Entity\+::set\+Attr (
+\begin{DoxyParamCaption}
+\item[{{\bf Component} $\ast$}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_entity_afb39788bb9d49672d59ae6d367e7f6b2}
+
+
+Assigne un component. 
+
+Ajoute le component passé en paramètre à la map avec comme clé l\textquotesingle{}id de la classe Effectue un cast du component créé dans la classe templaté et le return \begin{DoxyReturn}{Returns}
+T component 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+entity/\hyperlink{_entity_8hh}{Entity.\+hh}\end{DoxyCompactItemize}
