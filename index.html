@@ -54,18 +54,18 @@ cercle-&gt;getAttr&lt;EVENT&gt;()-&gt;setEvent(sf::Event::MouseButtonPressed, &a
 
 <p>La boucle d'event !</p>
 
-<p>while(!terminer)
+<pre><code>while(!terminer)
   {
     sf::Event e;
     while (render.update(e))
-      {
-        if (e.type == sf::Event::Closed)
-          terminer = true;
-        cercle-&gt;getAttr()-&gt;checkEvent(e);
-      }
-    render.clear();</p>
+  {
+    if (e.type == sf::Event::Closed)
+      terminer = true;
+    cercle-&gt;getAttr&lt;EVENT&gt;()-&gt;checkEvent(e);
+  }
+render.clear();
 
-<pre><code>cercle-&gt;getAttr&lt;DRAW&gt;()-&gt;draw();
+cercle-&gt;getAttr&lt;DRAW&gt;()-&gt;draw();
 
 render.display();
 </code></pre>
