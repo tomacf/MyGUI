@@ -58,19 +58,16 @@ cercle-&gt;getAttr&lt;EVENT&gt;()-&gt;setEvent(sf::Event::MouseButtonPressed, &a
   {
     sf::Event e;
     while (render.update(e))
-  {
-    if (e.type == sf::Event::Closed)
-      terminer = true;
-    cercle-&gt;getAttr&lt;EVENT&gt;()-&gt;checkEvent(e);
-  }
-render.clear();
-
-cercle-&gt;getAttr&lt;DRAW&gt;()-&gt;draw();
-
-render.display();
+    {
+       if (e.type == sf::Event::Closed)
+         terminer = true;
+       cercle-&gt;getAttr&lt;EVENT&gt;()-&gt;checkEvent(e);
+    }
+   render.clear();
+   cercle-&gt;getAttr&lt;DRAW&gt;()-&gt;draw();
+   render.display(); 
+ }
 </code></pre>
-
-<p>}</p>
 
 <h3>
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
